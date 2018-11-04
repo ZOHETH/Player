@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>0+1Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="font-awesome-4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/add.css" />
+    <link href="https://fonts.gdgdocs.org/css?family=Lobster" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+    <div id="list-text"></div>
+    <div class="corner">
+        <div class="fa fa-list" id="list"></div>
+        <div class="fa fa-plus-square-o" id="plus"></div>
+        <div class="fa fa-info-circle "></div>
+
+    </div>
+    <div class="music-box">
+        <div class="fa fa-spinner" id="wait"></div>
+        <audio id="song" src="CloudMusic//Self.mp3">
+        </audio>
+        <div class="music-name">
+            <i class="name-text"></i>
+        </div>
+        <div id="cover"><img src="3I)D[B1AUR[CBYHU(8Z(DN4.png"></div>
+        <div class="play">
+            <div id="up" class="slid">
+                <div class="fa fa-caret-left"></div>
+            </div>
+            <div id="down" class="slid">
+                <div class="fa fa-caret-right"></div>
+            </div>
+            <canvas id="canv"></canvas>
+            <div class="progressbar" id="progressbar"></div>
+            <div class="progressbar" id="progressbar-tm"></div>
+            <div id="time"> </div>
+        </div>
+    </div>
+    <div id="add-text">添 加 歌 曲
+        <div class="fa fa-reply"></div>
+        <div class="fa fa-remove"></div>
+    </div>
+    <div id="add-box">
+        
+        <div class="add- add-online">
+            <div class="fa fa-search"> </div>
+            <article>线上搜索</article>
+        </div>
+        <div class="add- add-local">
+            <div class="fa fa-file"></div>
+            <article>本地上传</article>
+        </div>
+    </div>
+    <div id="search-box">
+            <input id="keyword" type="text">
+            <a id="search-btn" class="fa fa-search" href="javascript:;"></a>
+            <div id="result">
+                <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                </ul>
+
+            </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/add.js"></script>
+</body>
+
+</html>
