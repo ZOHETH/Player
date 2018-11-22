@@ -1,0 +1,215 @@
+*{
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+    text-align: center;
+}
+
+body{
+    display:block;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+    background: linear-gradient(to bottom, #4cc2d7,#8590fb,#352138);
+    color: #fff;
+
+}
+#list-text{
+    position: fixed;
+    top:3%;
+    right: 18%;
+    height: 5%;
+    width: 0;
+    font-size:100%;
+    font-size: 2vh;
+    line-height: 2.5;
+    text-align: left;
+    background: rgba(113, 0, 136, 0.2)
+}
+.corner{
+    position: fixed;
+    top:2%;
+    right: 0;
+    height: 5%;
+    width: 20%;
+    font-size:100%;
+    font-size: 5vh;
+    text-align: center;
+}
+.corner .fa{
+    height: 100%;
+    height: 5vh;
+    width: 26%;
+    width: 5.2vh;
+    opacity: .2;
+    margin: 0 0.5vw;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0 0 5px #fff;
+}
+
+.corner .fa:hover{
+    animation:app .2s;
+    animation-fill-mode: forwards;
+    cursor:pointer;
+    color: rgb(245, 254, 255);
+    text-shadow: 0 0 20px #35e1ff;
+}
+
+
+.music-name{
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    color: #fff;
+    font-style: normal;
+    font-size: 2em;
+    text-align: center;
+}
+#time{
+    position: fixed;
+    bottom: 5%;
+    left: 2%;
+}
+.slid{
+    position: fixed;
+    height: 80%;
+    width: 10%;
+    top:10%;
+    border-radius: 200%;   
+    color: rgba(29, 26, 59, .0);
+    text-shadow: 0 0 30px #fff;
+}
+.slid::after{
+    position:absolute;
+    content:'';
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    border-radius: 200%;
+    box-shadow:0 0 30px 10px rgba(255, 255, 255, 0.7) inset;
+    
+}
+.slid .fa{
+    position: fixed;
+    top:45%;
+    height: 10%;
+    font-size: 100%;
+    font-size: 10vh;
+    
+}
+.slid .fa-caret-left{
+    left:0.6%;
+}
+.slid .fa-caret-right{
+    right:0.6%;
+}
+#up{
+    text-align: right;
+    left: -10%;
+    box-shadow: 10px 0px 100px rgba(255,255,255,.9);
+}
+#down{
+    text-align: left;
+    right: -10%;
+    box-shadow: -10px 0px 100px rgba(255,255,255,.9);
+}
+
+canvas {
+    position: fixed;
+    bottom:0;
+    display: block;
+    float: left;
+    
+    
+  }
+.progressbar{
+    position: fixed;
+    bottom:0;
+    height: 30px;
+    margin: auto;
+}
+#progressbar{
+    width: 0;
+}
+#progressbar-tm{
+    width: 100%;
+    z-index: 3;
+}
+#time{
+    color: white;
+}
+#cover {
+    background: #000;
+    position: relative;
+    z-index: 3;
+    float: left;
+    margin: 1%;
+    height: 20%;
+    height: 20vh;
+    width: 10%;
+    width: 20vh;
+    box-shadow: 0 0 5px 2px #d5f7ff;
+    border-radius: 50%;
+}
+#cover img{
+    margin: 2.5vh;
+    height: 15vh;
+    width: 15vh;
+    border-radius: 50%;
+}
+
+
+
+.rotate{
+    -webkit-animation: rot 5s linear infinite;
+    -moz-animation: rot 5s linear infinite;
+    -ms-animation: rot 5s linear infinite;
+    -o-animation: rot 5s linear infinite;
+    animation: rot 5s linear infinite; /*css3自定义动画*/
+}
+.return{
+    animation:ret 20s ease-in;
+    -webkit-animation:ret 20s ease-in;
+    animation-fill-mode: backwards;
+}
+.appear{
+    animation: slid 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation: slid 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes rot {
+    from {
+    transform: rotate(0deg);
+    }
+
+    to {
+    transform: rotate(360deg);
+    }
+}
+@keyframes ret {
+    to {
+    transform: rotate(0deg);
+    }
+}
+@keyframes app {
+    to {
+        opacity: 1;
+        box-shadow: 0 0 20px #fff;
+        text-shadow: 0 0 3px #fff;
+    }
+}
+@keyframes slid {
+    to {
+        opacity: 1;
+        width: 14%;
+        border-radius: 200%;
+        text-shadow: 0 0 10px #fff;
+    }
+}
